@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+font : bold 150% Verdana, Arial, Helvetica, sans-serif; 
+color : #800000;
+margin-right: 100px;
+text-align : center;
+}
+
+h2 {
+font : bold 120% Verdana, Arial, Helvetica, sans-serif;
+color : #800000;
+text-align : center;
+}
+
+h3 {
+font : bold 110% Verdana, Arial, Helvetica, sans-serif;
+color : #800000;
+text-align : center;
+padding : 0;
+}
+
+h4 {
+font : bold 100% Verdana, Arial, Helvetica, sans-serif;
+color : #333333;
+text-align : justify;
+}
+
+h5 {
+font : 70% Verdana, Arial, Helvetica, sans-serif;
+color : #333333;
+text-align : justify;
+}
+
+/*селектор типа */
+body{
+	font-size:1em;
+    font-family : Sans-serif, Arial, Verdana, Helvetica;
+    margin-top : 10px;
+    margin-bottom : 10px;
+	width: 100%;
+	height: 100%;
+    background-color:#AFEEEE;
+	line-height: normal;
+}
+/* ID селектор */
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+	height: 120px;
+	background: #FFE680;
+}
+
+#left-header {
+	height : 120px;
+    width :  100px;
+	float:left;
+	background: #EDEDED;
+}
+#right-header {
+	height : 120px;
+    width :  1000px;
+	background: #EDEDED;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+/* Right Sidebar
+-----------------------------------------------------------------------------*/
+/*Здесь пишем стили для правой колонки сайта */
+#right-sidebar{
+width:250px; /*ширина правой колонки */
+height: 100%;
+background-color:#EDDFAD;
+float:right; /*обазятельное выравнивание колонки по правому краю с включением обтекания */
+}
+#right-column-2r{margin:0; width:100%; height:100%; text-align:justify; font-size:1em; background-color:#fff}
+#right-column-2r p{margin:0; padding:5px; text-align:justify}
+ol, ul {
+	list-style: none;
+}
+/* hr-селектор класса для горизонтального списка*/
+ul.hr {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+   }
+   ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+   }
+/*Здесь пишем стили для блока контента */
+#content{
+background-color:#d5d7b5;
+margin:0px; /*обнуляем отступы сверху и снизу*/
+ /*обязательный отступ слева, должен быть немного больше ширины левой колонки */
+margin-right:252px; /*Обязательный отступ справа, должен быть немного больше ширины правой колонки */
+height: 100%;
+}
+#content h2 {
+margin:0px; /* Обнуляем отсупы для заголовка второго уровня, находящегося в блоке контента.*/
+}
+ #content p {
+margin:0px; /* Обнуляем отсупы для абзацев, находящихся в блоке контента.*/
+padding:10px; /*задаем поля, т.е. чтобы был промежуток между строками, чтобы было понятно, что это абзацы :)*/
+text-align : justify;
+}
+
+article{text-align:justify; overflow:hidden}
+aside{width:98%; display:block; overflow:hidden; position:relative}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer {
+   background:#666;
+   width:1000px;margin:0 auto;
+   border:#ccc solid 1px;position:relative;
+   text-align:center;
+   color:#fff;
+   }
+/* Footer */
+
+@media screen and (max-width:768px) {#wrapper body{margin-top:0; font-size:100%; margin-bottom:0; max-width:99%}
+header {background:none; border:none; max-width:99%; margin:0 auto}
+#left-header {max-width:99%; margin:0 auto}
+#right-header {max-width:99%; margin:0 auto}
+nav {width:99%;  margin:0 auto}
+#right-sidebar {margin-left:0; float:none; width:99%}
+#content {width:99%; font-size:100%; margin:0}
+footer {width:99%; margin:0}
+}
